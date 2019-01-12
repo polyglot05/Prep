@@ -1,0 +1,23 @@
+1. Difference between forEach and filter
+   The main difference between forEach and filter is that forEach just loop over the array and executes the callback but filter executes the callback and check its return value.
+
+Ex:     var sample = [1, 2, 3] // yeah same array
+        var result = sample.filter(elem => elem !== 2)
+        /* output */
+        [1, 3]
+
+2.  Map:
+    Map like filter & foreach takes a callback and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array.
+Ex:     let mapped = sample.map(elem => elem * 10)
+        console.log(mapped);
+        /* output */
+        [10, 20, 30]
+3. Reduce:
+    Reduce method of the array object is used to reduce the array to one single value.
+
+  Ex: var sum = sample.reduce((sum, elem) => sum + elem)
+      console.log(sum);
+      /* output */
+      6
+
+      

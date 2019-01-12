@@ -1,6 +1,5 @@
 // LRU Cache Javascript
-
-
+// Salesforce
 
 /**
  * @param {number} capacity
