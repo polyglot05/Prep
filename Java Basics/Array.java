@@ -4,11 +4,9 @@ package JavaBasics;
 
 public class Arrays {
 
-// Arrays : Collection of fixed no of homeogenous data elements using single variable. Once arrays are created, we cannot increase or decrease the size.
-
+	// Arrays : Collection of fixed no of homeogenous data elements using single variable. Once arrays are created, 
+	// we cannot increase or decrease the size.
 	// Size should be known in advance
-
-	// Declaration
 
 	public static void main(String args[]) {
 
@@ -19,9 +17,6 @@ public class Arrays {
 	//All the following declarations are valid
 
 	// 1D array
-
-
-
 	int[] arr1; // Most recommended bcoz name is clearly separated from type
 
 	// int[6] arr4; // Not a valid syntax bcoz we cannot specify size while declaration and will lead to compiler error
