@@ -41,3 +41,49 @@ Ex: var months = ['Jan', 'March', 'April', 'June'];
     // replaces 1 element at 4th index
     console.log(months);
     // expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
+
+6.  The arrow function that ES6 introduced has the lexical scope built in.
+  ES6 introduced a better way to access these remaining unknown parameters using rest.
+  “Rest,” as in “give me the rest of the parameters.” Rest parameters are indicated with three dots ( … ) and they can appear only at the end of the argument list. For example:
+
+    function showContact (firstName, lastName, ...titles)  {
+      console.log(firstName + ' ' + lastName + ', ' + titles[0] + ' and ' + titles[1]);
+    }
+    showContact('Sue', 'Johnson', 'Developer', 'Architect');
+
+7. The three dots ( … ) operator has two uses. As the rest operator,
+  it is used to gather up all the remaining arguments into an array.
+  But as the spread operator, it is used to expand a single variable into an array.
+  In both cases, it is working with arrays. It is just either expanding or collapsing that array.
+
+8. Instantiating and using methods from the class works exactly the same as it did for constructor functions.
+  Well, kind of. Using the new keyword was optional for ES5 constructor functions, but now is required.
+  If you try to leave off the newkeyword when working with classes, a TypeError will be thrown.
+  Another difference is that function declarations can be hoisted.
+  In other words, you can call a function that has yet to be declared.
+  Classes do not allow this sort of thing. A class can only be accessed after its definition is evaluated.
+
+
+9. The most important thing to remember is that even though ES6 classes look like traditional object-oriented classes, they are not.
+    Even with the new class keyword, they are still based on JavaScript’s prototypal inheritance.
+
+10. Modules always execute in strict mode, which means that variables need to be declared.
+    They only get executed once, which is right when they are loaded.
+    Import statements get hoisted, which means that all dependencies will execute right when the module is loaded.
+    A callback is just a function that executes after another function has finished executing. For example, if you were to run the following code and then look at the console, you would see the message, "1st Call".
+
+      function doSomething(msg, callback){
+          setTimeout(
+            function () {
+              console.log(msg);
+              callback();
+            },
+            1000);
+            }
+            doSomething("1st call", function() {});
+
+11. A promise is just a promise to return something at a later time.
+    Either the thing you wanted is returned, or an error.
+    ES6 introduced promises natively to JavaScript in the form of a Promise object.
+    Promises in ES6 are based on the Promises/A+ open standard and offer many advantages to traditional callback functions.
+    The most important advantage is how easy it is to chain asynchronous functions together.
