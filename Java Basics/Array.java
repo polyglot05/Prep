@@ -4,70 +4,42 @@ package JavaBasics;
 
 public class Arrays {
 
-// Arrays : Collection of fixed no of homeogenous data elements using single variable. Once arrays are created, we cannot increase or decrease the size.
-
+	// Arrays : Collection of fixed no. of homeogenous data elements using single variable. Once arrays are created, 
+	// we cannot increase or decrease the size.
 	// Size should be known in advance
-
-	// Declaration
 
 	public static void main(String args[]) {
 
-		Arrays arrayDemo = new Arrays();
-
-
+	Arrays arrayDemo = new Arrays();
 
 	//All the following declarations are valid
 
 	// 1D array
-
-
-
 	int[] arr1; // Most recommended bcoz name is clearly separated from type
 
 	// int[6] arr4; // Not a valid syntax bcoz we cannot specify size while declaration and will lead to compiler error
 
 	int arr2[] = new int[2]; // Declaration and initialization
 
-
-
 	// 2D array
 
 	int [][] arr3 = new int[3][2];
 
-
-
 	// All of the following are valid
-
 	// int [][]x;
-
 	// int x[][];
-
 	//int[] []x;
-
 	// int[] x[];
-
 	// int []x[];
 
-
-
 	// The following are valid 2D array declarations
-
 	// int[] a,b; // Both are 1D
-
 	// int[] a[],b;// a is 2D and b is 1D
-
 	// int[] a[],b[]; // a,b both are 2D
-
 	// int[] []a,b; //  a and b are 2D since [] is in front of both a and b
-
 	// int[] []a,b[]; // ais 2 and b is 3;
 
-
-
 	// This will throw an exception
-
-
-
 	// int[] []a,[]b; This is not valid declaration because if u eant to declare dimension before varaibale, it is possible only for the 1st variable
 
 
